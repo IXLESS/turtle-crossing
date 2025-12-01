@@ -15,12 +15,6 @@ screen.listen()
 screen.onkeypress(player.move_up, "Up")
 screen.onkey(player.move_up, "Up")
 
-
-
-
-
-
-
 game_is_on = True
 i = 0
 number = 10
@@ -52,6 +46,5 @@ while game_is_on:
     for car in cars:
         car.move(speed)
     i +=1
-
     
 screen.exitonclick()
