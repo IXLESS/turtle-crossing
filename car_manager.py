@@ -7,13 +7,13 @@ STARTING_MOVE_DISTANCE = 5
 class CarManager(Turtle):
     def __init__(self):
         super().__init__()
-        self.penup()  # Need parentheses to call method
+        self.penup()
         self.shape("square")
-        self.color(COLORS[randint(0, 5)])  # Random color on each car
-        random_y = randint(-250, 250)  # Random vertical position for each car
-        self.goto(310, random_y)  # Start near the right edge (600 / 2 = 300, +10 buffer)
+        self.color(COLORS[randint(0, 5)])
+        random_y = randint(-250, 250)
+        self.goto(310, random_y)
         self.shapesize(stretch_wid=1, stretch_len=2)
-        self.setheading(180)  # Face left
+        self.setheading(180)
         self.i = 0
         
     def move(self, speed):
